@@ -1,0 +1,180 @@
+.ui-header h1.ui-title {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+h1.logo {
+	height: 181px;
+	margin: 0 auto;
+	overflow: hidden;
+	background: url(aspirina6.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+}
+
+h1.logo_produttore {
+	height: 100px;
+	margin: 0 auto;
+	overflow: hidden;
+	background: url(logobayer_big.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+}
+
+h2#header2 {
+	font-size: 16px;
+	border-top: 3px dashed #5f9ea0;
+	padding: 8px 0 0 0;
+	color: #444;
+	margin-top: 0;
+	text-shadow: rgba(0,0,0,0.4) 2px 2px 10px;
+}
+
+h3.header3 {
+	padding: 10px;
+	background-image: -webkit-linear-gradient(#FDFDFD,#EEE);
+	color: #333;
+	border: 1px solid #ccc;
+	border-radius: .6em;
+}
+
+.before {
+	border-bottom: 2px ridge #FDFDFD;
+	background-image: -webkit-linear-gradient(#ececec,#cbcbcb);
+	padding: 10px;
+	font-size: 10px;
+	color: #000;
+}
+
+.before p {
+	margin: 0 0 5px 0;
+}
+
+#info .before {
+	text-align: center;
+	background: transparent;
+}
+
+#comment .before {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.after {
+	font-size: 11px;
+	border-bottom: 3px dashed #5f9ea0;
+	padding: 0 0 8px 0;
+	color: #444;
+}
+
+.navigation {
+	position: fixed;
+	top: 85px;
+	left: -220px;
+	z-index: 1000;
+	display: none;
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.4);
+	width: 220px;
+}
+
+.navigation a {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	font-weight: bold;
+}
+
+.navigation a .ui-btn {
+	text-align: left;
+}
+
+.navigation a .ui-btn-inner {
+	text-align: left;
+	padding-right: 15px;
+	border-top-left-radius: 0;
+}
+
+.navigation a .ui-btn-text {
+	font-size: 12px;
+	text-align: left;
+}
+
+.ui-collapsible-content {
+	font-size: 10px;
+}
+
+.ui-grid-a .ui-block-a {
+	width: 25%;
+	margin-top: 10px;
+	padding-top: 1px;
+	border-top: 2px solid #bbb;
+}
+
+.ui-grid-a .ui-block-b {
+	width: 70%;
+	padding-left: 5%;
+	margin-top: 10px;
+	padding-top: 1px;
+	border-top: 2px solid #bbb;	
+}
+
+#info .ui-grid-a .ui-block-a, #info .ui-grid-a .ui-block-b {
+	font-size: 10px;	
+}
+
+.ui-grid-a > div:first-child, .ui-grid-a > div:first-child + div.ui-block-b {
+	margin-top: 0;
+}
+
+.ui-collapsible-heading-toggle span.ui-btn-inner {
+	white-space: normal;
+	font-size: 14px;
+}
+
+div.subtitle {
+	padding-left: 17px;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+li {
+	margin-left: -10px;
+}
+
+ul {
+	margin: 0;
+}
+
+.ui-block-b li {
+	margin-left: -40px;
+	list-style: none;
+}
+
+.ui-block-b li h4 {
+	display: run-in;
+	margin: 0;
+	text-decoration: underline;
+}
+
+.ui-block-b p {
+	margin: 0;
+}
+
+#leaflet .ui-footer {
+	height: 75px;
+}
+
+.ui-footer img {
+	float: right;
+	margin: 5px 20px;
+}
+
+div.ui-body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.anchortop {
+	float: right;
+	margin: 10px 0 2px 0;
+}
