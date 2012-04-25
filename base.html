@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <title>Patient Information Leaflet</title>
+  <meta name="description" content="" />
+  <meta name="author" content="walalatamac" />
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=yes" />
+
+  <link rel="stylesheet" href="lib/jquery.mobile-1.0.1/jquery.mobile-1.0.1.min.css" />
+  <link rel="stylesheet" href="lib/jquery.mobile-1.0.1/jquery.mobile.simpledialog.min.css" />
+  <link rel="stylesheet" href="css/PILeaflet.css" />
+  
+  
+  <script type="text/javascript" src="lib/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="lib/jquery.mobile-1.0.1/jquery.mobile-1.0.1.min.js"></script>
+  <script type="text/javascript" src="lib/jquery.mobile-1.0.1/jquery.mobile.simpledialog.min.js"></script>
+  <script src="js/PILeaflet.js"></script>
+
+ 
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+</head>
+
+<body>	
+	
+	<div data-role="page" id="leaflet">
+		
+				
+		<div data-role="header" data-theme="c">
+			<table width="100%">
+				<tr>
+					<td align="left">
+						<a href="home_reg.html"  data-role="button" data-icon="grid" data-theme="b" data-iconpos="left" data-inline="true">Menu</a>
+					</td>
+					<td align="center">
+						<h1 id="itemtitle"></h1>
+					</td>
+					<td align="right">
+						<a href=""  data-role="button" data-icon="star" data-theme="b" data-iconpos="right" data-inline="true">Save</a>
+					</td>
+				</tr>
+			</table>		
+			
+			
+		</div>
+		
+		<div id="header"><h1 class="logo"></h1></div>		
+		
+		<div class="before">
+			<p><strong>Prima dell'uso leggete con attenzione tutte le informazioni contenute nel foglio illustrativo.</strong></p>
+			Questo è un medicinale di AUTOMEDICAZIONE che potete usare per curare disturbi lievi e transitori facilmente riconoscibili e risolvibili senza ricorrere all'aiuto medico.<br>
+			Può quindi essere usato senza ricetta ma va usato correttamente per assicurarne l'efficacia e ridurne gli effetti indesiderati:<br>
+			* per maggiori informazioni e consigli rivolgetevi al farmacista<br>
+			* consultate il medico se il disturbo non si risolve dopo un breve periodo di trattamento
+		</div>	
+		
+		<div data-role="content">	
+			<div data-role="controlgroup" class="navigation">
+				<a href="#info"  data-role="button" data-icon="info" data-theme="b" data-transition="flip">Informazioni sul produttore</a>
+				<a href="#comment"  data-role="button" data-icon="gear" data-theme="b" data-transition="flip">Commenta questo medicinale</a>
+			</div>	
+				
+			<h2 id="header2">Contenuto del foglio illustrativo</h2>
+			
+			<div data-role="collapsible" data-theme="c">
+				<h3 id="block1"><span>1. Caratteristiche del prodotto</span>
+					<div class="subtitle">Servono a identificare univocamente il prodotto e non correre il rischio di assumere un farmaco o un dosaggio errato.</div>
+				</h3>
+				<div class="ui-grid-a">
+					<div class="ui-block-a"><strong>Denominazione commerciale</strong></div>
+					<div class="ui-block-b">
+						Aspirina
+					</div>
+					
+					<div class="ui-block-a"><strong>Composizione</strong></div>
+					<div class="ui-block-b">
+						Una compressa contiene:
+						<ul>
+							<li><h4>Principi attivi:</h4>
+								<p> acido acetilsalicilico 500mg</p>
+							</li>
+							<li><h4>Eccipienti:</h4>
+								<p> amidi di mais, cellulosa polvere</p>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="ui-block-a"><strong>Forma farmaceutica</strong></div>
+					<div class="ui-block-b">
+						Aspirina si presenta in forma di compresse deglutibili.
+					</div>
+					
+					<div class="ui-block-a"><strong>Contenuro della confezione</strong></div>
+					<div class="ui-block-b">
+						Il contenuto della confezione è di 4, 20, 24, 30 compresse in blister e 20 compresse in flacone.<br>
+						E' possibile che non tutte le confezioni siano commercializzate.
+					</div>
+					
+					<div class="ui-block-a"><strong>Categoria farmaceutica</strong></div>
+					<div class="ui-block-b">
+						<strong>Aspirina</strong> è un'analgesico, antinfimmatorio e antipiretico.
+					</div>
+					<a href="#" class="anchortop" data-role="button" data-icon="arrow-u" data-iconpos="notext">Top</a>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			
+			<div data-role="collapsible" data-theme="c">
+				<h3 id="block2"><span>2. Indicazioni terapeutiche</span>
+					<div class="subtitle">Indicano le diverse malattie (o i gruppi di malattie) per cui il farmaco è indicato.</div>
+				</h3>
+				<p><strong>Aspirina</strong> si usa per la terapia sintomatica degli stati febbrili e delle sindromi influenzali e da raffreddamento e per il trattamaento sintomatico di mal di testa e di denti, nevralgie, dolori mestruali, dolori reumatici e muscolari.
+				<a href="#" class="anchortop" data-role="button" data-icon="arrow-u" data-iconpos="notext">Top</a>
+				</p>
+				<div style="clear: both;"></div>
+			</div>
+			
+			<div data-role="collapsible" data-theme="c">
+				<h3 id="block3"><span>3. Controindicazioni</span>
+					<div class="subtitle">Indicano le condizioni per le quali il farmaco non deve essere assunto.</div>	
+				</h3>
+				<div><strong>Aspirina</strong> non deve essere usato nei seguenti casi:<ul>
+					<li>ipersensibilità al principio attivo (acido acetilsalicilico), ad altri analgesici (antidolorifici) / antipiretici (antifebbrili) / farmaci antinfiammatori non steroidei (FANS) o ad uno qualsiasi degli eccipienti</li>
+					<li>ulcera gastroduodenale;</li>
+					<li>diatesi emorragica</li>
+					<li>insufficienza renale, cardiaca o epatica gravi</li>
+					<li>deficit della glucosio-6-fosfato deidrogenasi (enzima la cui assenza, geneticamente determinat, comporta una malattia caratterizzata dalla ridotta sopravvivenza dei globuli rossi);</li>
+					<li>trattamento concomitante con metotrexato (a dosi di 15 mg/settimana o più) o con warfarin (vedere:<em>Quali medicinali o alimenti possono modificare l'effetto del medicinale</em>);</li>
+					<li>anamnesi di asma indotta dalla somministrazione o sostanze ad attività simile, in particolare farmaci antinfiammatori non steroidei:</li>
+					<li>ultimo trimestre di gravidanza e allattamento (vedere:<em>cosa fare durante la gravidanza e l'allattamento</em>);</li>
+					<li>bambini e ragazzi di età inferiore ai 16 anni</li>
+				</ul>
+				<a href="#" class="anchortop" data-role="button" data-icon="arrow-u" data-iconpos="notext">Top</a>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			
+			<div data-role="collapsible" data-theme="c">
+				<h3 id="block4"><span>4. Precauzioni d'impiego</span>
+					<div class="subtitle">Indicano in quali casi il farmaco può essere assunto ma con attenzione.</div>	
+				</h3>
+				<div>Prima di somministrare un qualsiasi medicinale devono essere adottate tutte le precauzioni utili a prevenire reazioni indesiderate:<ul>
+					<li>escludete l'esistenza di precedenti reazioni di ipersensibilità a questo o ad altri medicinali</li>
+					<li>escludete l'esistenza delle altre contrindicazioni o delle condizioni che possono esporre a rischio di effetti indesiderati potenzialmente gravi. In caso dubbio consultate il ostro medico o farmcista.</li>
+				</ul>
+				L'assunzione del prodotto deve avvenire a stomaco pieno.</div>
+				<a href="#" class="anchortop" data-role="button" data-icon="arrow-u" data-iconpos="notext">Top</a>
+				<div style="clear: both;"></div>
+			</div>
+			
+			<div data-role="collapsible" data-theme="c">
+				<h3 id="block5"><span>5. Integrazioni con altre sostanze</span>
+					<div class="subtitle">Indicano quali medicinali o alimenti possono modificare l'effetto del medicinale.</div>	
+				</h3>
+				<div>Informare il medico o il farmacista se si sta assumendo o recentemente si è assunto qualsisasi altro medicinale, anche quelli senza prescrizione medica<br>
+					<strong>Aspirina 500mg compresse</strong> non deve essere usata insieme a questi medicinali (vedere le contrindicazioni):<ul>
+					<li>Metotrexato (dosi maggiori o uguali a 15mg/settimana);</li>
+					<li>Warfarin;</li>
+				</ul>
+				<strong>Aspirina 500mg compresse</strong> può essere usata insieme a questi medicinali solo dietro prescrizione e sotto il controllo del medico:<ul>
+					<li>Inibitori selettivi del <em>re-uptake</em> della Serotonina;</li>
+					<li>ACE inibitori;</li>
+					<li>Acetazolamine;</li>
+					<li>Acido valproico;</li>
+					<li>Altri FANS (uso topico escluso);</li>
+					<li>Antiacidi;</li>
+					<li>Antiaggraganti piastrinici;</li>
+					<li>Trombolitici o anticoagulanti orali o parenterali;</li>
+					<li>Antidiabetici (ad es. insulina e ipoglicemizzanti orali);</li>
+					<li>Digossina;</li>
+					<li>Diuretici;</li>
+					<li>Fenitoina;</li>
+					<li>Corticosteroidi (esclusi uso topico e terapia sostitutiva nell'insufficienza corticosurrenale);</li>
+					<li>Metoclopramide;</li>
+					<li>Metotrexato (dosi inferiori a 15mg/settimana);</li>
+					<li>Uricosurici;</li>
+					<li>Zafirlukast;</li>
+				</ul>
+				Se state usando altri medicinali chiedete consiglio al vostro medico o farmacista.
+				<p><em>Alcool</em><br>
+					La somma degli effetti dell'alcool e dellacido acetisalicilicoprovoca un aumento del rischio di sanguinamento gastrointestinale.<br> 
+					E' comunque opporuno non somministrare altri farmaci per via orale entro 1 o 2 ore dall'impiego del prodotto.
+				</p>
+				<a href="#" class="anchortop" data-role="button" data-icon="arrow-u" data-iconpos="notext">Top</a>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			
+			<div data-role="collapsible" data-theme="c">
+				<h3 id="block6"><span>6. Avvertenze</span>
+					<div class="subtitle">Informazioni sull'utilizzo in genere e in casi particolari.</div>	
+				</h3>
+				<div class="ui-grid-a">
+					<div class="ui-block-a"><strong>Scadenza e conservazione</strong></div>
+					<div class="ui-block-b">
+						Attenzione: non utilizzare il medicinale dopo la data di scadenza indicata sulla confezione.
+						<ul>
+							<li><h4>Blister:</h4>
+								<p> Conservare ad una temperatura non superiore a 30 °C</p>
+							</li>
+							<li><h4>Flacone:</h4>
+								<p> Conservare ad una temperatura non superiore a 30 °C</p>
+							</li>
+						</ul>
+						<strong>Tenere il medicinale fuori dalla portata e dalla vista dei bambini.</strong><br>
+						<strong><em>E' importante avere sempre a disposizione le informazioni sul medicinale, pertanto conservare sia la scatola che il foglio illustrativo.</em></strong><br>
+					</div>
+					
+					<div class="ui-block-a"><strong>Smaltimento del prodotto</strong></div>
+					<div class="ui-block-b">
+						I medicinali non devono essere gettati nell'acqua di scarico e nei rifiuti domestici. Chieda al farmacista come eliminare i medicinali che non utilizza più. Questo aiuterà a proteggiere l'ambiente.
+					</div>
+				</div>
+				
+				<h3 class="header3">Avvertenze speciali</h3>
+				<p>L'uso del prodotto è riservato ai soli pazienti adulti.<br>
+					Non usare l'acido acetilsalicilico insieme ad un altro FANS o, comunque, non usare più di un FANS per volta.
+				</p>
+				<div class="ui-grid-a">
+					<div class="ui-block-a"><strong>Fertilità</strong></div>
+					<div class="ui-block-b">
+						L'uso di acido acetisalicilico come di qualsisasi farmaco inibitore della sintesi delle prostaglandine e della cicloossigenasi potrebbe interferire con la fertilità; di ciò devono essere edotte le donne che hanno problemi di fertilità o che sono sottoposte ad indagini sulla fertilità.
+					</div>
+					
+					<div class="ui-block-a"><strong>Reazioni di ipersensibilità</strong></div>
+					<div class="ui-block-b">
+						L'acido acetilsalicilico e gli altri FANS possono causare reazioni di ipersensibilità (compresi attacchi d'asma, rinite, angiodema, o orticaria).<br>
+						Il rischio è maggiore in soggetti che già in passato hanno presentato una reazione di ipersensibilità dopo l'uso di questo tipo di farmaci (vedere le controindicazioni) e nei soggetti che presentano reazioni allergiche ad altre sostanze (es. reazioni cutanee, prurito, orticaria).<br>
+						Nei soggetti con asma e/o rinite (con o senza poliposi nasale) e/o orticaria le reazioni possono essere più frequenti e gravi.
+					</div>
+					
+					<div class="ui-block-a"><strong>Età geriatrica (<em>specialmente al di sopra dei 75 anni</em>)</strong></div>
+					<div class="ui-block-b">
+						Il rischio di effetti indesiderati gravi è maggiore nei soggetti di età geriatrica.<br>
+						Bisogna informare il medico se dovete essere sottoposti ad un intervento chirurgico (anche di piccola entità come ad esempio l'estrazione di un dente) poichè l'impiego pre-operatorio può ostacolare l'emostasi intraoperatoria.<br>
+						Dato che l'acido acetilsalicilico può essere causa di sanguinamento gastrointestinale occorre tenerne conto nel caso fosse necessario eseguire una ricerca di sangue occulto.
+					</div>
+					
+					<div class="ui-block-a"><strong>Quando può essere usato solo dopo aver consultato il medico</strong></div>
+					<div class="ui-block-b">
+						<div>Nei casi seguenti la somministrazione del farmaco richiede la prescrizione del medico dopo accurata valutazione del rapporto rischio/beneficio:
+							<ul>
+							<li>siete un soggetto a maggior rischio di reazioni di ipersensibilità
+								<ul><li>se soffrite di asma e/o rinite (con o senza poliposi nasale) e/o orticaria</li></ul>
+							</li>
+							<li>siete un soggetto a maggior rischio di lesioni gastrointestinali (sanguinamento, ulcera, perforazione)
+								<ul>
+									<li>se avete sofferto di ulcera peptica in passato;</li>
+									<li>se fate uso di forti quantità di alcool;</li>
+									<li>se fate uso di dosi più elevate di acido acetilsalicilico (effetto dose correlato);</li>
+								</ul>
+							</li>
+							<li>siete un soggetto con difetti della coagulazione del sangue o che assume farmaci anticoagulanti</li>
+							<li>siete un soggetto con  compromissione della funzione renale o cardiaca o epatica</li>
+							<li>siete affetti da asma</li>
+							<li>siete un soggetto con iperuricemia/gotta</li>
+							<li>associazioni di farmaci non raccomandate o che richiedono precauzioni particolari o un aggiustamento del dosaggio (vedere le interazioni con altre sostanze)</li>
+						</ul>
+						Bambini e ragazzi di età inferiore ai 16 anni (vedere le contrindicazioni).<br>
+						I soggetti di età superiore ai 70 anni, soprattutto in presenza di terapie concomitanti, devono usare <strong>Aspirina</strong> solo dopo aver consultato il medico.<br>
+						Durante il primo e secondo trimestre di gravidanza il medicinale può essere usato solo dopo aver consultato il medico (vedere: <em>Cosa fare durante la gravidanza e l'allattamento</em>).<br>
+						<em>E' opportuno consultare il medico anche nei casi in cui tali disturbi si fossero presentati anche in passato.</em>
+						</div>
+					</div>
+					
+					
+					<div class="ui-block-a"><strong>Cosa fare durante la gravidanza e l'allattamento</strong></div>
+					<div class="ui-block-b">
+						<strong>Aspirina 500mg compresse</strong> non deve essere usata nell'ultimo trimestre di gravidanza e nell'allattamento.<br>
+						Nel primo e secondo trimenstre di gravidanza deve essere usata solo dopo aver consultato il medico e aver valutato con lui il rapporto rischio/beneficio nel preprio caso.<br>
+						Consultate il medico nel caso sospettiate uno stato di gravidanza o desideriate pianificare una maternità.<br>
+						<strong>Aspirina 500mg compresse</strong> è controindicata dutrante l'allattamento.
+					</div>
+					
+					<div class="ui-block-a"><strong>Guida di veicoli e utilizzo di macchinari</strong></div>
+					<div class="ui-block-b">
+						A causa della possibile insorgenza di cefalea o vertigini, questo medicinale può compromettere la capacità di guidare veicoli e di usare macchinari.
+					</div>
+				<a href="#" class="anchortop" data-role="button" data-icon="arrow-u" data-iconpos="notext">Top</a>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			
+			<div data-role="collapsible" data-theme="c">
+				<h3 id="block7"><span>7. Posologia</span>
+					<div class="subtitle">Indicano dosaggio, frequenza e durata della somministrazione, i sintomi e le misure da adottare in caso di sovradosaggio.</div>	
+				</h3>
+				<div class="ui-grid-a">
+					<div class="ui-block-a"><strong>Dose, modo e tempo di assunzione</strong></div>
+					<div class="ui-block-b">
+						<ul>
+							<li><h4>Quanto:</h4>
+								<p> 1 o 2 compresse di aspirina 2-3 volte al giorno.<br>
+									Attenzione: non superare le dosi consigliate senza il consiglio del medico. I pazienti anziani dovrebbero attenersi ai dosaggi minimi sopraindicati.
+								</p>
+							</li>
+							<li><h4>Quando e per quanto tempo:</h4>
+								<p> L'assunzione del prodotto deve avvenire astomaco pieno.<br>
+									Utilizzare sempre il dosaggio minimo efficace ed aumentarlo solo se non è sufficiente ad alleviare i sintomi (dolore e febbre).<br>
+									I soggetti maggiormente esposti al rischio de effetti indesiderati gravi, che possono usare il farmaco solo se prescritto dal medico, devono seguirne scrupolosamente le istruzioni.<br>
+									Non assumere il prodotto per più di 3-5 giorni senza il parere del medico, consultare il medico nel caso in cui i sintomi persistano. Usare il medicinale per il periodo più breve possibile.<br>
+									Consultare il medico se il disturbo si presenta ripetutamente o se avete notato un qualsiasi cambiamento recente delle sue caratteristiche.
+								</p>
+							</li>
+							<li><h4>Come:</h4>
+								<p> La compressa di <strong>Aspirina</strong> va deglutita con acqua, tè, limonata, etc.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<h3 class="header3">Sovradosaggio</h3>
+					<p>
+						<em>In caso di ingestione accidentale di una dose eccessiva di </em><strong>Aspirina</strong> <em>avvertite immediatamente il medico  rivolgetevi al più vicino ospedale</em><br>
+						La tossicità da salicilati (un dosaggio superiore a 100mg/kg/giorno per due giorni consecutivi può indurre tossicità) può essere la conseguenza di un'assunzione cronica di dosi eccessive oppure di sovradosaggio acuto, potenzialmente pericoloso per la vita e che comprende anche l'ingestione accidentale nei bambini.<br>
+						L'avvelenamento <strong>cronico</strong> da salicilati può essere insidioso dal momento che i segni e i sintomi sono aspecifici. Una lieve intossicazione cronica da salicilati, o salicilismo, in genere si verifica unicamente in seguito a utilizzo ripetuto di dosi considerevoli. Tra i sintomi vi sono il capogiro, le vertigini, il tinnito, la sordità, la sudorazione, la nausea e il vomito, la cefalea e lo stato confusionale. Questi sintomi possono essere controllati riducendo il dosaggio. Il tinnito può manifestarsi a concentrazioni plasmatiche comprese tra i 150 e i 300 microgrammi/ml, mentre a concentrazioni superiori a 300 microgrammi/ml si palesano effetti avversi più gravi.<br>
+						La caratteristica principale dell'intossicazione <strong>acuta</strong> è una grave alterazione dell'equilibrio acido-base, che può varira con l'età e la gravità dell'intossicazione; la presentazione più comune, nel bambino, è l'acidosi metabolica. Non è possibile stimare la gravità dell'avvelenamento dalla sola concentrazione plasmatica; l'assorbimento dell'acido acetilsalicilico può essere ritardato a causa di uno svuotamento gastrico ridotto, della formazione di concrezioni dello stomaco, o in conseguenza dell'ingestione di preparati gastroresistenti. La gestione di un'intossicazione da acido acetilsalicilico è determinata dall'entità, dallo stadio e dai sintomi clinici di quest'ultima, e deve essere attuata secondo le tecniche convenzionali di gestione degli avvelenamenti. Le misure principali da adottare consistono nell'accelerazione dell'escrezione del farmaco e nel ripristino del metabolismo elettrolitico e acido-base.<br>
+						Per complessi effetti fisiopatologici, connessi con l'avvelenamento da salicilati, i segni e sintomi/risultati delle indagini biochimiche e strumentali, possono comprendere:<br>
+						<span>Segni e sintomi del sovradosaggio lieve/moderato:</span> tachipnea, iperventilazione, alcalosi respiratoria, sudorazione, nausea, vomito, cefalea, vertigini.<br>
+						<span>Segni e sintomi del sovradosaggio moderato/grave:</span> alcalosi respiratoria con acidosi metabolica compensatoria, febbre, iperventilazione, edema polmonare, insufficienza respiratoria, asfissia, aritmie, ipotensione, arresto cardiocircolatorio, disidratazione, oliguria fino ad insufficienza renale, chetosi, iperglicemia, grave ipoglicemia, tinnito, sordità, sanguinamento gastrointestinale, ulcera gastrica, coagulopatia, encefalopatia e depressione del SNC con manifestazioni variabili della letargia, e confusione fino al come e alle convulsioni, edema cerebrale, danni epatici.<br>
+						A dosaggi elevati possono comparire anche:<br>
+						Anemia da carenza di ferro (solo dopo trattamento prilungato).<br>
+						Alterazioni del gusto.<br>
+						Eruzioni cutanee (acneiformi, eritematose, scarlattiniformi, eczematoidi, desquamative, bollose, purpuriche), prurito.<br>
+						Altri: congiuntivite, anoressia, riduzione dell'acuità visiva, sonnolenza.<br>
+						Raramente: anemia aplastica, agranulocitosi, coagulazione intravascolare disseminata, pancitopenia, leucopenia, trombocitopenia, eosinopenia, porpora, eosinofilia associata all'epatotossicità indotta dal farmaco, mefrotissicità (nefrite tubulo interstiziale allergica), ematuria (presenza di sangue nelle urine).<br>
+						Reazioni allergiche acute conseguenti all'assunzione di acido acetilsalicilico, possono essere trattate se necessario con somministrazione di adrenalina, corticosteroidi e di un antistaminico.<br>
+						In caso di emergenza e di assenza di controindicazioni (quali ad esempio: condizioni di riduzione/assenza dei riflessi protettivi delle vie aeree o di coscienza ridotta o di soggetti a rischio di emoraggia o di perforazione gastrointestinale o in caso di contemporanea assunzione di corrosivi) si può tentare di favorire l'eliminazione dell'acido acetilsalicilico assunto per via orale attraverso la somministrazione di carbone attivo o l'esecuzione di una lavanda gastrica.<br>
+						Può essere necessaria la gestione dei liquidi e degli elettroliti e la diuresi alcalina forzata.<br>
+						L'acido acetilsalicilico è dializzabile.
+					</p>
+				
+				<div class="ui-grid-a">	
+					<div class="ui-block-a"><strong>Cosa fare se avete dimenticato di prendere una o più dosi</strong></div>
+					<div class="ui-block-b">
+						Continuare la terapia come da terapia consigliata.
+					</div>
+					
+					<div class="ui-block-a"><strong>Effetti dovuti alla sospensione del trattamento</strong></div>
+					<div class="ui-block-b">
+						Nessun effetto. Se ha qualsiasi dubbio sull'uso di <strong>Aspirina</strong> si rivolga al medico o al farmacista.
+					</div>
+				<a href="#" class="anchortop" data-role="button" data-icon="arrow-u" data-iconpos="notext">Top</a>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			
+			<div data-role="collapsible" data-theme="c">
+				<h3 id="block8"><span>8. Effetti indesiderati</span>
+					<div class="subtitle">Indicano i possibili effetti negativi anche del normale uso del medicinale e le misure da adottare.</div>	
+				</h3>
+				<p>Come tutti i medicinali, anche questo può causare effetti indesiderati sebbene non tute le persone li manifestino.<br>
+					Gli effetti indesiderati manifestati più frequentemente sono a carico dell'apparato gastrointestinale.<br>
+					Questi disturbi possono essere parzialmente alleviati assumendo il medicinale a stomaco pieno. La maggior parte degli effetti indesiderati sono dipendenti dalla dose e dalla durata del trattamento.<br>
+					Gli effetti indesiderati osservati con l'acido acetilsalicilico sono generalmente comuni agli altri FANS.
+				</p>
+				<div class="ui-grid-a">
+					<div class="ui-block-a"><strong>Patologie del sistema emolinfopoietico</strong></div>
+					<div class="ui-block-b">
+						Prolungamento del tempo di sanguinamento, anemia da sanguinamento gastrointestinale, riduzione delle piastrine (trombocitopeina) in casi estremamente rari.<br>
+						A seguito di emorragia può manifestarsi anemia acuta e cronica post-emorragica/sideropenica (dovuta, per esempio, a microemorraggie occulte) con le relative alterazioni dei parametri di laboratorioed i relativi segni e sintomi clinici come astenia, pallore e ipoperfusione. 
+					</div>
+					
+					<div class="ui-block-a"><strong>Patologie del sistema nervoso</strong></div>
+					<div class="ui-block-b">
+						Cefalea, vertigini.<br>
+						Raramente: sindrome di Reye (SdR). La SdR si manifesta inizialmente con il vomito (persistente o ricorrente) o con altri segni di sofferenza encefalica di diversa entità: da svogliatezza, sonnolenza o alterazioni della personalità (irritabilità o aggressività) a disorientamento, confusione o delirio fino a convulsioni o perdita di coscienza. E' da tener presente la variabilità del quadro clinico: anche il vomito può mancare o essere sostituito dalla diarrea.<br>
+						Se questi sintomi insorgono nei giorni immediatamente successivi ad un episodio influenzale (o simil-influenzale o di varicella o ad un altra infezione virale) durante il quale è stato somministrato acido acetilsalicilico o altri medicinali contenenti salicilati l'attenzione del medico deve essere immediatamente rivolta alla possibilità di una SdR.<br>
+						<em>Il rispetto delle istruzioni contenute nel foglio illustrativo riduce il rischio di effetti indesiderati. Questi effetti indesiderati sono generalmente transitori. Quando si presentano è tuttavia opportuno consultare il medico o il farmacista.<br>
+							E' importante comunicare al medico o al farmacista la comparsa di effetti indesiderati non descritti nel foglio illustrativo.
+						</em>
+					</div>
+					
+					<div class="ui-block-a"><strong>Patologie dell'orecchio e del labirinto</strong></div>
+					<div class="ui-block-b">
+						Tinnito (ronzio/fruscio/tintinnio/fischio auricolare).
+					</div>
+					
+					<div class="ui-block-a"><strong>Patologie respiratorie, toraciche e mediastiniche</strong></div>
+					<div class="ui-block-b">
+						Asma, rinite, epistassi.
+					</div>
+					
+					<div class="ui-block-a"><strong>Patologie gastrointestinali</strong></div>
+					<div class="ui-block-b">
+						Sanguinamento gastrointestinale (occulto), disturbi gastrici, pirosi, dolore addominale, vomito, diarrea, nausea, gengivorragia.<br>
+						Raramente: erosione e/o ulcerazione e/o perforazione e/o emorragia gastrointestinale, ematemasi (vomito di sangue o di materiale "a posta di caffè"), melena (emissioni di feci nere, picee), esofagite. 
+					</div>
+					
+					<div class="ui-block-a"><strong>Patologie epatobiliari</strong></div>
+					<div class="ui-block-b">
+						Raramente: epatotossicità (lesione epatocellulare generalmente lieve e asintomatica) che si manifesta con un aumento delle transaminasi.
+					</div>
+					
+					<div class="ui-block-a"><strong>Patologie della cute e dei tessuti sottocutanei</strong></div>
+					<div class="ui-block-b">
+						Angiodema e/o orticaria e/o eritema (associate a reazioni di ipersensibilità).
+					</div>
+					
+					<div class="ui-block-a"><strong>Patologie renali ed urinarie</strong></div>
+					<div class="ui-block-b">
+						Alterazione della funzione renale (in presenza di condizioni di alterata emodinamica renale), sanguinamenti urogenitali.
+					</div>
+					
+					<div class="ui-block-a"><strong>Patologie sistemiche e condizioni relative alla sede di assunzione</strong></div>
+					<div class="ui-block-b">
+						Emorragie peri-operatorie, ematomi.
+					</div>
+					
+					<div class="ui-block-a"><strong>Disturbi del sistema immunitario</strong></div>
+					<div class="ui-block-b">
+						<span>Reazioni di ipersensibilità:</span> asma, angiodema, orticaria, nausea, vomito, dolore addominale crampiforma, diarrea, eritema, rinite (rinorrea profusa), congestione nasale congiuntivite.<br>
+						Raramente: anafilassi.
+					</div>
+				<a href="#" class="anchortop" data-role="button" data-icon="arrow-u" data-iconpos="notext">Top</a>
+				</div>
+				<div style="clear: both;"></div>				
+			</div>
+			
+		<p class="after"><strong>Revisione del foglio illustrativo da parte dell'Agenzia Italiana del Farmaco:</strong> luglio 2009</p>
+			
+		</div> 
+		
+		
+		<div data-role="footer" data-theme="c"><img src="BayerLogo.png"></div>
+	
+	</div>
+	
+	<div data-role="page" id="info" data-back-btn-theme="c">
+		<div data-role="header" data-theme="c">
+			<table width="100%">
+				<tr>
+					<td align="left">
+						<a href="home_reg.html"  data-role="button" data-icon="grid" data-theme="b" data-iconpos="left" data-inline="true">Menu</a>
+					</td>
+					<td align="center">
+						<h1>Informazioni sul produttore</h1>
+					</td>
+					<td align="right">
+						<a href=""  data-role="button" data-icon="star" data-theme="b" data-iconpos="right" data-inline="true">Save</a>
+					</td>
+				</tr>
+			</table>		
+			
+				
+		</div>
+		
+		<div id="header"><h1 class="logo_produttore"></h1></div>
+		
+		<div class="before">
+			Bayer S.p.A. - Viale Certosa 130 - Milano.
+		</div>
+		
+		<div data-role="content" data-theme="c">
+			<div data-role="controlgroup" class="navigation">
+				<a href="#leaflet"  data-role="button" data-icon="home" data-theme="b" data-transition="flip" data-direction="reverse">Foglio Illustrativo</a>
+				<a href="#comment"  data-role="button" data-icon="gear" data-theme="b" data-transition="flip">Commenta questo medicinale</a>
+			</div>
+		
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><strong>Sedi</strong></div>
+				<div class="ui-block-b">
+					<ul>
+						<li><h4>Confezione in Blister:</h4>
+							<p> Bayer Bitterfeld GmbH - Greppin - Germania</p>
+						</li>
+						<li><h4>Confezione in flacone:</h4>
+							<p> Bayer HealthCare Manifacturing S.r.l. - via delle Groane 126, Garbagnate Milanese (MI)</p>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="ui-block-a"><strong>Centralino</strong></div>
+				<div class="ui-block-b">+39 02 XXX.XXX</div>
+				
+				<div class="ui-block-a"><strong>Email</strong></div>
+				<div class="ui-block-b">email@bayer.com</div>
+				
+				<div class="ui-block-a"><strong>Sito Web</strong></div>
+				<div class="ui-block-b">http://www.bayer.com</div>
+			</div>			
+		</div>
+		
+		<div data-role="footer" data-theme="c">
+
+		</div>
+	</div>
+	
+	<div data-role="page" id="comment">
+		<div data-role="header" data-theme="c">
+			<table width="100%">
+				<tr>
+					<td align="left">
+						<a href="home_reg.html"  data-role="button" data-icon="grid" data-theme="b" data-iconpos="left" data-inline="true">Menu</a>
+					</td>
+					<td align="center">
+						<h1>Commenta questo medicinale</h1>
+					</td>
+					<td align="right">
+						<a href="" data-role="button" data-icon="star" data-theme="b" data-iconpos="right" data-inline="true">Save</a>
+					</td>
+				</tr>
+			</table>		
+			
+			
+		</div>
+		
+		<div class="before">
+		Espandi le sezioni sottostanti e compila i campi al loro interno.
+		</div>
+		
+		<div data-role="content" data-theme="c">
+			<div data-role="controlgroup" class="navigation">
+				<a href="#info" data-role="button" data-icon="info" data-theme="b" data-transition="flip">Informazioni sul produttore</a>
+				<a href="#leaflet"  data-role="button" data-icon="home" data-theme="b" data-transition="flip" data-direction="reverse">Foglio Illustrativo</a>
+			</div>
+		
+			<div data-role="collapsible" data-theme="c">
+				<h3>Informazioni su di te</h3>
+				<div class="ui-body ui-body-c">
+					<p><label for="name">Nome:</label>
+	         		<input type="text" name="name" id="namefield" value=""/></p>
+	         		
+	         		<p><label for="surname">Cognome:</label>
+	         		<input type="text" name="surname" id="surnamefield" value=""/></p>
+	         			         		
+	         		<p><label for="address">Indirizzo:</label>
+	         		<input type="text" name="address" id="addressfield" value=""/></p>
+	         		
+	         		<p><label for="email">Email:</label>
+	        		<input type="email" name="email" id="emailfield" value=""/></p>
+	        		
+	        		<p><label for="tel">Tel:</label>
+	        		<input type="tel" name="tel" id="telfield" value=""/></p>
+					
+			        <p><label for="age">Età:</label>
+			        <input type="number" name="age" id="agefield" value=""/></p>
+					
+					<p><fieldset data-role="controlgroup">
+					    <legend>Sesso:</legend>
+					       	<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1"/>
+				         	<label for="radio-choice-1">Femmina</label>
+	
+				         	<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"/>
+				         	<label for="radio-choice-2">Maschio</label>
+				    </fieldset></p>
+					
+			        <p><label for="weight">Peso:</label>
+			        <input type="number" name="weight" id="weightfield" value=""/></p>
+					
+					<p><label for="otherinfo">Altre infromazioni rilevanti:</label>
+					<textarea name="otherinfo" id="otherinfo"></textarea></p>
+				</div> 
+			</div>
+			<div data-role="collapsible" data-theme="c">
+				<h3>Informazioni sul farmaco</h3>
+				<div class="ui-body ui-body-c">
+					<p><fieldset data-role="controlgroup">
+					    <legend>Effetti del farmaco:</legend>
+					       	<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1"/>
+				         	<label for="radio-choice-1">E' stato efficace</label>
+	
+				         	<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"/>
+				         	<label for="radio-choice-2">Nessun effetto rilevante</label>
+				         	
+				         	<input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3"/>
+				         	<label for="radio-choice-3">Si sono presentati effetti collaterali</label>
+				    </fieldset></p>
+				    
+				    <fieldset id="sideefetctsfiels">
+				    <p><label for="symptoms">Descrivi i sintomi degli effetti collaterali:</label>
+					<textarea name="symptoms" id="symptoms"></textarea></p>
+					
+					<p>Durata del periodo di somministrazione:<br>
+						<label for="date" class="ui-hide-label">Data di inizio:</label>
+	         			<input type="date" name="date" id="startdate" value=""/>
+	         		
+	         			<label for="date">Data di fine:</label>
+	         			<input type="date" name="date" id="enddate" value=""/></p>
+	         		
+	         		<p><label for="dose">Indica la quantità/dosaggio di prodotto assunto:</label>
+			        <input type="text" name="dose" id="dosefield" value=""/></p>
+			        
+			        <div class="containing-element">
+						<label for="flip-min">Il farmaco è stato assunto dietro prescrizione?:</label>
+						<select name="slider" id="flip-min" data-role="slider">
+							<option value="off">No</option>
+							<option value="on">Si</option>
+						</select>
+					</div>						
+					
+					
+					<p><label for="wherediditbuyfrom">Dove è stato acquistato il farmaco?</label>
+			        <input type="text" name="wherediditbuyfrom" id="wherediditbuyfrom" value=""/></p>
+			        
+			        <p><label for="interactions">Ci sono state interazioni con altri farmaci o sostanze particolari?</label>
+					<textarea name="interactions" id="interactions"></textarea></p>
+					</fieldset>			
+				</div>
+			</div>
+			<div align="center">
+				<a href="#" data-role="button" data-theme="a" data-icon="delete" data-inline="true">Cancella</a>		
+				<a href="#" id="simplebool" data-role="button" data-theme="b" data-icon="forward" data-iconpos="right" data-inline="true">Invia</a>	
+			</div>
+	</div>	
+</body>
+</html>

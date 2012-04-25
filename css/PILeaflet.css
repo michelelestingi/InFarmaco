@@ -1,13 +1,14 @@
 .ui-header h1.ui-title {
 	margin-left: 0;
 	margin-right: 0;
+	
 }
 
 h1.logo {
 	height: 181px;
 	margin: 0 auto;
 	overflow: hidden;
-	background: url(aspirina6.jpg);
+	background: url(../aspirina6.jpg);
 	background-repeat: no-repeat;
 	background-position: 50% 0;
 }
@@ -16,7 +17,7 @@ h1.logo_produttore {
 	height: 100px;
 	margin: 0 auto;
 	overflow: hidden;
-	background: url(logobayer_big.png);
+	background: url(../logobayer_big.png);
 	background-repeat: no-repeat;
 	background-position: 50% 0;
 }
@@ -70,11 +71,10 @@ h3.header3 {
 .navigation {
 	position: fixed;
 	top: 85px;
-	left: -220px;
-	z-index: 1000;
-	display: none;
+	left: -200px;
+	z-index: 1000;	
 	box-shadow: 0 0 15px 5px rgba(0,0,0,0.4);
-	width: 220px;
+	
 }
 
 .navigation a {
@@ -119,6 +119,10 @@ h3.header3 {
 
 #info .ui-grid-a .ui-block-a, #info .ui-grid-a .ui-block-b {
 	font-size: 10px;	
+}
+
+#info h1, #comment h1 {
+	font-size: 16px;
 }
 
 .ui-grid-a > div:first-child, .ui-grid-a > div:first-child + div.ui-block-b {
@@ -177,4 +181,48 @@ div.ui-body {
 .anchortop {
 	float: right;
 	margin: 10px 0 2px 0;
+}
+
+
+#TOP {
+	
+	text-align: right;
+	padding-right: 2%;
+	
+}
+
+
+nav {
+	vertical-align:50%;
+	text-align: center;
+}
+
+nav button, nav p button {
+	text-align:center;
+	font-family:Helvetica,Arial,sans-serif;
+	width:90%;
+	font-size: 1em;
+}
+
+header {
+	font-family:Helvetica,Arial,sans-serif;
+
+	font-size: 2em;
+	text-align: center;
+}
+
+footer {
+	font-family:Helvetica,Arial,sans-serif;
+	
+	position:absolute;
+	bottom:1%;
+	left:45%;
+	
+	font-size: 0.5em;
+	
+}
+
+
+.containing-element .ui-slider-switch {
+	width: 9em;
 }
