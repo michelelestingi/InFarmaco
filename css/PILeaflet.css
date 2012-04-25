@@ -71,7 +71,7 @@ h3.header3 {
 .navigation {
 	position: fixed;
 	top: 85px;
-	left: -200px;
+	left: -220px;
 	z-index: 1000;	
 	box-shadow: 0 0 15px 5px rgba(0,0,0,0.4);
 	
@@ -218,7 +218,7 @@ footer {
 	bottom:1%;
 	left:45%;
 	
-	font-size: 0.5em;
+	font-size: 0.7em;
 	
 }
 
