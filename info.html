@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <title>Patient Information Leaflet</title>
+  <meta name="description" content="" />
+  <meta name="author" content="walalatamac" />
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=yes" />
+
+  <link rel="stylesheet" href="lib/jquery.mobile-1.0.1/jquery.mobile-1.0.1.min.css" />
+  <link rel="stylesheet" href="lib/jquery.mobile-1.0.1/jquery.mobile.simpledialog.min.css" />
+  <link rel="stylesheet" href="css/PILeaflet.css" />
+  
+  
+  <script type="text/javascript" src="lib/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="lib/jquery.mobile-1.0.1/jquery.mobile-1.0.1.min.js"></script>
+  <script type="text/javascript" src="lib/jquery.mobile-1.0.1/jquery.mobile.simpledialog.min.js"></script>
+  <script src="js/PILeaflet.js"></script>
+
+ 
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+</head>
+
+<body>	
+	
+		
+	<div data-role="page" id="info" data-back-btn-theme="c">
+		<div data-role="header" data-theme="c">
+			<table width="100%">
+				<tr>
+					<td align="left">
+						<a href="home_reg.html"  data-role="button" data-icon="grid" data-theme="b" data-iconpos="left" data-inline="true">Menu</a>
+					</td>
+					<td align="center">
+						<h1>Informazioni sul produttore</h1>
+					</td>
+					<td align="right">
+						<a href=""  data-role="button" data-icon="star" data-theme="b" data-iconpos="right" data-inline="true">Save</a>
+					</td>
+				</tr>
+			</table>		
+			
+				
+		</div>
+		
+		<div id="header"><h1 class="logo_produttore"></h1></div>
+		
+		<div class="before">
+			Bayer S.p.A. - Viale Certosa 130 - Milano.
+		</div>
+		
+		<div data-role="content" data-theme="c">
+			<div data-role="controlgroup" class="navigation">
+				<a href="#leaflet"  data-role="button" data-icon="home" data-theme="b" data-transition="flip" data-direction="reverse">Foglio Illustrativo</a>
+				<a href="#comment"  data-role="button" data-icon="gear" data-theme="b" data-transition="flip">Commenta questo medicinale</a>
+			</div>
+		
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><strong>Sedi</strong></div>
+				<div class="ui-block-b">
+					<ul>
+						<li><h4>Confezione in Blister:</h4>
+							<p> Bayer Bitterfeld GmbH - Greppin - Germania</p>
+						</li>
+						<li><h4>Confezione in flacone:</h4>
+							<p> Bayer HealthCare Manifacturing S.r.l. - via delle Groane 126, Garbagnate Milanese (MI)</p>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="ui-block-a"><strong>Centralino</strong></div>
+				<div class="ui-block-b">+39 02 XXX.XXX</div>
+				
+				<div class="ui-block-a"><strong>Email</strong></div>
+				<div class="ui-block-b">email@bayer.com</div>
+				
+				<div class="ui-block-a"><strong>Sito Web</strong></div>
+				<div class="ui-block-b">http://www.bayer.com</div>
+			</div>			
+		</div>
+		
+		<div data-role="footer" data-theme="c">
+
+		</div>
+	</div>
+	
+</body>
+</html>
