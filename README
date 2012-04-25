@@ -1,1 +1,2 @@
 Questa è la mia versione modificata con l'aggiunta delle directory
+Per visualizzare correttamente il prototipo sul web, è necessario premere aggiorna nelle pagine del leaflet (PILeaflet.html, info.html, comment.html). Se non si aggiorna, la barra laterale non appare. Sul device, invece, funziona correttamente
