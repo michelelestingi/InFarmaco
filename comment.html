@@ -21,7 +21,14 @@
   <script type="text/javascript" src="lib/jquery.mobile-1.0.1/jquery.mobile-1.0.1.min.js"></script>
   <script type="text/javascript" src="lib/jquery.mobile-1.0.1/jquery.mobile.simpledialog.min.js"></script>
   <script src="js/PILeaflet.js"></script>
-
+  
+  <script type="text/javascript" charset="utf-8" src="js/cordova-1.6.0.js"></script>
+  
+  <script type="text/javascript">
+  	function submit_alert () {
+  		navigator.notification.alert("Commento inviato correttamente! Grazie!","Avviso","Ok");
+  	}  	
+  </script>
  
   
   <link rel="shortcut icon" href="/favicon.ico" />
@@ -144,7 +151,7 @@
 			</div>
 			<div align="center">
 				<a href="#" data-role="button" data-theme="a" data-icon="delete" data-inline="true">Cancella</a>		
-				<a href="#" data-role="button" data-theme="b" data-icon="forward" data-iconpos="right" data-inline="true" onclick="navigator.notification.alert("Commento inviato correttamente! Grazie!","Avviso","Ok");">Invia</a>	
+				<a href="#" data-role="button" data-theme="b" data-icon="forward" data-iconpos="right" data-inline="true" onclick="submit_alert();">Invia</a>	
 			</div>
 		</div>
 	</div>	

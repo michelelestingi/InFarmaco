@@ -111,7 +111,7 @@ $( '#comment' ).live( 'pageinit',function(event){
 });
 
 
-function hide_search () {
+function hide_search() {
 	$(".searchbox").hide();  
 }
 
