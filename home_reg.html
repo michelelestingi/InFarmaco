@@ -22,14 +22,20 @@
   		<script type="text/javascript" src="lib/jquery.mobile-1.0.1/jquery.mobile-1.0.1.min.js"></script>
   		<script type="text/javascript" src="lib/jquery.mobile-1.0.1/jquery.mobile.simpledialog.min.js"></script>
   		<script src="js/PILeaflet.js"></script>
+  		
+  		
 
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 	</head>
 
-	<body>
+	<body onload="hide_search();">
 		<div>
+			<div data-role="fieldcontain" class="searchbox">
+    			<label for="search"></label>
+    			<input type="search" name="password" id="search" value="cerca farmacia..." data-mini="true"/>
+			</div>
 			<div id="TOP">
 				<a href="index.html"  data-role="button" data-icon="delete" data-theme="a" data-iconpos="left" data-inline="true">Log Out</a>
 
@@ -43,7 +49,7 @@
 					<a href="PILeaflet.html"  data-role="button" data-icon="search" data-theme="b" data-iconpos="top" data-inline="true">Cerca Farmaco</a>
 
 				
-					<a href="" data-role="button" data-icon="search" data-theme="b" data-iconpos="top" data-inline="true">Cerca Farmacie</a>
+					<a href="" onclick="show_search();" data-role="button" data-icon="search" data-theme="b" data-iconpos="top" data-inline="true">Cerca Farmacie</a>
 
 				
 			</nav>

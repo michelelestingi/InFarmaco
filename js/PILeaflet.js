@@ -110,6 +110,15 @@ $( '#comment' ).live( 'pageinit',function(event){
 	});
 });
 
+
+function hide_search () {
+	$(".searchbox").hide();  
+}
+
+function show_search() {
+	$(".searchbox").show();
+}
+
 	 
   function semi_swipe() {
   	$(".navigation").show().animate({"left": "-100px"}, "slow");
