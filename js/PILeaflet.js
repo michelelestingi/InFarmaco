@@ -69,12 +69,17 @@ $( '#leaflet' ).live( 'pageinit',function(event){
 			$("h1#itemtitle").text("Patient Information Leaflet").css({"font-size" : "16px", "margin" : ".6em 0px .8em"});
 			}
 	});
+	
+	$("h1#itemtitle").text("Patient Information Leaflet").css({"font-size" : "16px", "margin" : ".6em 0px .8em"});
+
 
 	$( ".anchortop" ).live( "click", function(event, ui) {
 		$(window).scrollTop(0);
 	});
 
-	$(".navigation").show().animate({"left": "-205px"}, "fast");
+	if(!$( ".ui-page" ).is('#info, #comment')){
+		$(".navigation").hide();
+	}
 });
 
 $( document ).live( 'pagebeforechange',function(event, ui){
