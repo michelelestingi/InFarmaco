@@ -107,3 +107,9 @@ body {
 #indicator > li:last-child {
 	margin:0;
 }
+
+#mappa {
+	border-color: black;
+	
+	border-radius: 33px;
+}

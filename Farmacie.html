@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <title>Farmacie</title>
+  <meta name="description" content="" />
+  <meta name="author" content="walalatamac" />
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=yes" />
+
+  <link rel="stylesheet" href="lib/jquery.mobile-1.0.1/jquery.mobile-1.0.1.min.css" />
+  <link rel="stylesheet" href="lib/jquery.mobile-1.0.1/jquery.mobile.simpledialog.min.css" />
+  <link rel="stylesheet" href="css/PILeaflet.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  
+  
+  <script type="text/javascript" src="lib/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="lib/jquery.mobile-1.0.1/jquery.mobile-1.0.1.min.js"></script>
+  <script type="text/javascript" src="lib/jquery.mobile-1.0.1/jquery.mobile.simpledialog.min.js"></script>
+  <script src="js/PILeaflet.js"></script>
+  
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.ui.map.full.min.js"></script>
+	<script src="js/mymap.js"></script>
+
+ 
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+</head>
+<body>
+	<div data-role="header" data-theme="c">
+			<table width="100%">
+				<tr>
+					<td width="10%" align="left">
+						<a href="home_reg.html"  data-role="button" data-icon="grid" data-theme="b" data-iconpos="left" data-inline="true">Menu</a>
+					</td>
+					<td width="*" align="center">
+						<h1><strong>Farmacie</strong></h1>
+					</td>
+					<td width="10%" align="right">
+						<a href=""  data-role="button" data-icon="plus" data-theme="b" data-iconpos="notext"></a>
+					</td>
+				</tr>
+			</table>		
+			
+			
+	</div>
+	<p>
+		<div align="center" >
+			<img id="mappa" src="img/map_markers.png" border="10px"/>
+		</div>
+	</p>
+	<p>
+		<div align="center">
+		<h1><strong>Nelle Vicinanze</strong></h1>
+		<ul data-role="listview" data-theme="c" data-mini="true">
+			<li>
+				<a href="">
+					<div id="headlist" align="left">
+						<span style="padding-left: 2%">ABCD</span>
+					</div>
+					<div id="distance" align="right">
+						<span style="padding-right: 5%">190m</span>					
+					</div>
+					<div id="subheadlist" align="left">
+						<span style="font-size: 0.8em; padding-left: 4%;">via xyz, 99 - 00000 Città</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div id="headlist" align="left">
+						<span style="padding-left: 2%">DEFG</span>
+					</div>
+					<div id="distance" align="right">
+						<span style="padding-right: 5%">210m</span>					
+					</div>
+					<div id="subheadlist" align="left">
+						<span style="font-size: 0.8em; padding-left: 4%;">via mno, 88 - 00000 Città</span>
+					</div>
+				</a>
+			</li>
+		</ul>
+		</div>
+	</p>
+</body>
+</html>
